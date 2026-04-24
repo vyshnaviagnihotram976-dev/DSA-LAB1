@@ -56,3 +56,20 @@ minimum distance */
  } 
  } 
  }
+printf("\nVertex \t Distance from Source (0)\n"); 
+ for (int i = 0; i < V; i++) 
+ printf("%d --> %d\n", i, dist[i]); 
+ } 
+  
+ int main() 
+ { 
+ int graph[V][V] = { 
+ {0, 10, 0, 30, 100}, 
+ {10, 0, 50, 0, 0}, 
+ {0, 50, 0, 20, 10}, 
+ {30, 0, 20, 0, 60}, 
+ {100, 0, 10, 60, 0}}; 
+  
+ dijkstra(graph); 
+ return 0; 
+ }
